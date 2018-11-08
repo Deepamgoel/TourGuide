@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="appbar_header_height">256dp</dimen>
+    <dimen name="activity_margin_content">24dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="activity_horizontal_margin">8dp</dimen>
+    <dimen name="activity_margin_half">4dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_196">196dp</dimen>
+    <dimen name="dp_256">256dp</dimen>
+    <dimen name="sp_24">24sp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_194">194dp</dimen>
+    <dimen name="dp_344">344dp</dimen>
+    <dimen name="sp_14">14sp</dimen>
+    <dimen name="sp_12">12sp</dimen>
+    <dimen name="sp_18">18sp</dimen>
+    <dimen name="dp_64">64dp</dimen>
+</resources>
