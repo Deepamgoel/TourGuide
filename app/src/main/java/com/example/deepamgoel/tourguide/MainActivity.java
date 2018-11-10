@@ -20,7 +20,7 @@ import com.bumptech.glide.load.engine.GlideException;
 import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 import com.example.deepamgoel.tourguide.adapter.ViewPagerAdapter;
-import com.example.deepamgoel.tourguide.fragment.HomeFragment;
+import com.example.deepamgoel.tourguide.fragment.DestinationFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -51,12 +51,11 @@ public class MainActivity extends AppCompatActivity {
         mTabLayout.setTabRippleColor(null);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setTitle(R.string.new_delhi);
-//            getSupportActionBar().setSubtitle(R.string.capital);
         }
 
         Glide.with(this)
                 .asBitmap()
-                .load("https://goo.gl/EEYA9y")
+                .load("https://bit.ly/2Ffeb2d")
                 .listener(new RequestListener<Bitmap>() {
                     @Override
                     public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Bitmap> target, boolean isFirstResource) {
@@ -79,11 +78,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 mViewPager.setCurrentItem(tab.getPosition());
-                switch (tab.getPosition()) {
-                    case 0:
-                        // Todo
-                        break;
-                }
             }
 
             @Override
@@ -96,6 +90,30 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            case 0:
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+    private void setUpViewpager(ViewPager viewPager) {
+        ViewPagerAdapter pagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
+//        pagerAdapter.addFragment(new DestinationFragment(), "Travel guide");
+        pagerAdapter.addFragment(new DestinationFragment(), getString(R.string.destination));
+//        pagerAdapter.addFragment(new DestinationFragment(), "Must try");
+        viewPager.setAdapter(pagerAdapter);
     }
 
     private void setPalette(Bitmap bitmap) {
@@ -117,29 +135,4 @@ public class MainActivity extends AppCompatActivity {
             mCollapsingToolbarLayout.setStatusBarScrimColor(getResources().getColor(R.color.colorPrimaryDark));
         }
     }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
-        switch (id){
-            case 0:
-                return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
-
-    private void setUpViewpager(ViewPager viewPager) {
-        ViewPagerAdapter pagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
-        pagerAdapter.addFragment(new HomeFragment(), "Travel guide");
-        pagerAdapter.addFragment(new HomeFragment(), "Destinations");
-        pagerAdapter.addFragment(new HomeFragment(), "Must try");
-        viewPager.setAdapter(pagerAdapter);
-    }
-
 }

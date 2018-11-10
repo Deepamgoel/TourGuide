@@ -35,6 +35,6 @@ public class ViewPagerAdapter extends FragmentPagerAdapter {
 
     public void addFragment(Fragment fragment, String title) {
         mFragmentList.add(fragment);
-        mFragmentTitleList.add(title);
+        mFragmentTitleList.add(title.toUpperCase());
     }
 }
