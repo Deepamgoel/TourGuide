@@ -14,57 +14,41 @@
 
         <ImageView
             android:id="@+id/item_image_view"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dp_194"
-            android:adjustViewBounds="true"
+            style="@style/ItemImageView"
             android:contentDescription="@string/item_image"
-            android:scaleType="centerCrop"
             tools:src="@drawable/wallpaper" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dp_16"
-            android:layout_marginLeft="@dimen/dp_16"
-            android:layout_marginEnd="@dimen/dp_24"
-            android:layout_marginRight="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_16"
             android:layout_marginBottom="@dimen/dp_24"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/item_title_text_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_16"
+                style="@style/ItemTextView"
                 android:fontFamily="@font/roboto_condensed_regular"
-                android:textColor="@android:color/black"
                 android:textSize="@dimen/sp_24"
                 tools:text="The Red Fort" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_4"
-                android:gravity="center_vertical"
                 android:orientation="horizontal">
 
                 <RatingBar
                     android:id="@+id/item_rating_bar"
                     style="@style/RatingBar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
                     android:numStars="5"
                     android:stepSize="0.5"
                     tools:rating="4.5" />
 
                 <TextView
                     android:id="@+id/item_rating_text_view"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/dp_4"
-                    android:layout_marginLeft="@dimen/dp_4"
-                    android:fontFamily="@font/roboto_thin"
+                    style="@style/ItemTextView"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginLeft="0dp"
                     android:textSize="@dimen/sp_12"
                     tools:text="4.4" />
 
@@ -72,35 +56,19 @@
 
             <TextView
                 android:id="@+id/item_description_short_text_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_8"
-                android:fontFamily="@font/roboto_thin"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/sp_14"
+                style="@style/ItemTextView"
                 tools:text="Iconic 1600s imperial residence &amp; museum" />
 
             <TextView
                 android:id="@+id/item_more_button"
-                style="@style/Base.TextAppearance.AppCompat.Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_16"
-                android:clickable="true"
-                android:focusable="true"
-                android:text="@string/more"
-                android:textColor="@color/colorAccent" />
+                style="@style/ItemButtonTextView"
+                android:text="@string/more" />
 
             <TextView
                 android:id="@+id/item_description_long_text_view"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_4"
-                android:fontFamily="@font/roboto_thin"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/sp_14"
-                android:visibility="gone"
+                style="@style/ItemTextView"
                 tools:text="Landmark 17th-century Mughal fortress built in towering red sandstone, now a complex of museums." />
+
         </LinearLayout>
 
     </LinearLayout>

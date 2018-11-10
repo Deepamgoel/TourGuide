@@ -22,7 +22,7 @@ import butterknife.ButterKnife;
 public class MustEatFragment extends Fragment {
 
 
-    @BindView(R.id.recycler_view_must_eat_fragment)
+    @BindView(R.id.recycler_view_fragment)
     RecyclerView recyclerView;
     private List<ItemEatModel> list = new ArrayList<>();
 
@@ -34,7 +34,7 @@ public class MustEatFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_must_eat, container, false);
+        View view = inflater.inflate(R.layout.fragment_list, container, false);
         ButterKnife.bind(this, view);
 
         addItem(list);
