@@ -21,6 +21,7 @@ import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 import com.example.deepamgoel.tourguide.adapter.ViewPagerAdapter;
 import com.example.deepamgoel.tourguide.fragment.DestinationFragment;
+import com.example.deepamgoel.tourguide.fragment.MustEatFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
         Glide.with(this)
                 .asBitmap()
-                .load(getResources().getStringArray(R.array.image_urls)[6])
+                .load(getResources().getStringArray(R.array.destination_image_urls)[6])
                 .listener(new RequestListener<Bitmap>() {
                     @Override
                     public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Bitmap> target, boolean isFirstResource) {
@@ -103,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (id) {
             case 0:
+                // TODO: 10-11-2018
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -110,9 +112,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void setUpViewpager(ViewPager viewPager) {
         ViewPagerAdapter pagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
-//        pagerAdapter.addFragment(new DestinationFragment(), "Travel guide");
         pagerAdapter.addFragment(new DestinationFragment(), getString(R.string.destination));
-//        pagerAdapter.addFragment(new DestinationFragment(), "Must try");
+        pagerAdapter.addFragment(new MustEatFragment(), getString(R.string.must_eat));
         viewPager.setAdapter(pagerAdapter);
     }
 

@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 
 import com.example.deepamgoel.tourguide.R;
 import com.example.deepamgoel.tourguide.adapter.DestinationAdapter;
-import com.example.deepamgoel.tourguide.model.ItemModel;
+import com.example.deepamgoel.tourguide.model.ItemDestinationModel;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +23,7 @@ public class DestinationFragment extends Fragment {
 
     @BindView(R.id.recycler_view_destination_fragment)
     RecyclerView recyclerView;
-    private List<ItemModel> list = new ArrayList<>();
+    private List<ItemDestinationModel> list = new ArrayList<>();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class DestinationFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        View view = inflater.inflate(R.layout.fragment_destination, container, false);
         ButterKnife.bind(this, view);
 
         addItem(list);
@@ -44,15 +44,16 @@ public class DestinationFragment extends Fragment {
         return view;
     }
 
-    private void addItem(List<ItemModel> list) {
-        String[] urlArray = getResources().getStringArray(R.array.image_urls);
-        String[] titleArray = getResources().getStringArray(R.array.title);
+    private void addItem(List<ItemDestinationModel> list) {
+        String[] urlArray = getResources().getStringArray(R.array.destination_image_urls);
+        String[] titleArray = getResources().getStringArray(R.array.destination_title);
         String[] descriptionShortArray = getResources().getStringArray(R.array.descriptionShort);
         String[] descriptionLongArray = getResources().getStringArray(R.array.descriptionLong);
         String[] ratingArray = getResources().getStringArray(R.array.rating);
+
         for (int i = 0; i < titleArray.length; i++) {
             list.add(
-                    new ItemModel(
+                    new ItemDestinationModel(
                             urlArray[i],
                             titleArray[i],
                             descriptionShortArray[i],

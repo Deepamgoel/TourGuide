@@ -4,12 +4,16 @@
     <string name="capital">Capital of India</string>
 
     <string name="item_image">item_image</string>
-    <string name="more">more</string>
     <string name="settings">Settings</string>
+
+    <!--Tabs-->
     <string name="destination">Destinations</string>
+    <string name="must_eat">Must Eat</string>
+
+    <string name="more">more</string>
     <string name="less">less</string>
 
-    <string-array name="image_urls">
+    <string-array name="destination_image_urls">
         <item>https://bit.ly/2FckDa4</item>
         <item>https://bit.ly/2PhtM5M</item>
         <item>https://bit.ly/2z0LXTc</item>
@@ -22,7 +26,7 @@
         <item>https://bit.ly/2Ozi9SJ</item>
     </string-array>
 
-    <string-array name="title">
+    <string-array name="destination_title">
         <item>The Red Fort</item>
         <item>Qutb Minar</item>
         <item>India Gate</item>
@@ -74,4 +78,94 @@
         <item>This large Hindu temple covers 7.5 acres &amp; features numerous shrines, fountains &amp; a garden.</item>
     </string-array>
 
+    <string-array name="food_image_urls">
+        <item>https://bit.ly/2OBFSlg</item>
+        <item>https://bit.ly/2DzncBF</item>
+        <item>https://bit.ly/2OBMXC7</item>
+        <item>https://bit.ly/2Ff4Ozy</item>
+        <item>https://bit.ly/2zHFADR</item>
+        <item>https://bit.ly/2SZT1HY</item>
+        <item>https://bit.ly/2D9LyAR</item>
+        <item>https://bit.ly/2FfM6Yn</item>
+        <item>https://bit.ly/2QDETms</item>
+        <item>https://bit.ly/2AZwX9H</item>
+    </string-array>
+
+    <string-array name="food_title">
+        <item>Jalebi</item>
+        <item>Dahi Bhalla</item>
+        <item>Choley Bhature</item>
+        <item>Kakori Kebab</item>
+        <item>Chicken Jahangiri</item>
+        <item>Mutton Korma</item>
+        <item>Chicken Seekh Kebab</item>
+        <item>Fish Fry</item>
+        <item>Rabri Falooda</item>
+        <item>Raj Kachori</item>
+    </string-array>
+
+    <string-array name="restaurant">
+        <item>at Old Famous Jalebi Wala</item>
+        <item>at Natraj Cafe</item>
+        <item>at Sitaram Diwan Chand</item>
+        <item>at Alkauser</item>
+        <item>at Al Jawahar</item>
+        <item>at Karim\’s</item>
+        <item>at Colonel\'s Kababz</item>
+        <item>at Ganesh Pakodewala</item>
+        <item>at Giani\’s Di Hatti</item>
+        <item>at Haldirams</item>
+    </string-array>
+
+    <string-array name="food_description">
+        <item>Start off with one of the oldest eateries in Delhi. This 100-year-old shop is known for serving giant, hot and juicy Jalebis.</item>
+        <item>A plate of Dahi Bhalla at Natraj is a ritual for people who visit Chandni Chowk regularly.</item>
+        <item>If Choley Bhature and lassi is food anaesthesia, then this place will induce food coma!</item>
+        <item>For years, people have been queueing up in front of Alkauser every evening, hoping their kebabs are not sold out.</item>
+        <item>Jama Masjid is a paradise for a food lovers, and this iconic place is right at the entrance of this paradise.</item>
+        <item>The true place for Mughlai food.</item>
+        <item>You will fall in love at first bite!</item>
+        <item>The man behind the kadhai can pick up fried pakoras from the hot oil with bare hands. It happens only in Delhi!</item>
+        <item>You won\’t be able to finish a plate by yourself.</item>
+        <item>If you\'re not drooling already, this will surely make you drool!</item>
+    </string-array>
+
+    <string-array name="price">
+        <item><![CDATA[<b>Price:</b> Rs 500 per kg]]></item>
+        <item><![CDATA[<b>Price:</b> Rs 50 per plate]]></item>
+        <item><![CDATA[<b>Price:</b> Rs 70 per plate]]></item>
+        <item><![CDATA[<b>Price:</b> Rs 160]]></item>
+        <item><![CDATA[<b>Price:</b> Rs 230 for Half Plate]]></item>
+        <item><![CDATA[<b>Price:</b> Rs 320]]></item>
+        <item><![CDATA[<b>Price:</b> Rs 330]]></item>
+        <item><![CDATA[<b>Price:</b> Rs 325 (250gms)]]></item>
+        <item><![CDATA[<b>Price:</b> Rs 80]]></item>
+        <item><![CDATA[<b>Price:</b> Rs 100)]]></item>
+    </string-array>
+
+    <string-array name="where">
+        <item><![CDATA[<b>Where:</b> 795, Dariba Kalan Road, Dariba Corner, Opposite to Central Baptist Church, Chandni chowk]]></item>
+        <item><![CDATA[<b>Where:</b> 1396, Main Road Near Central Bank, Opposite, Paranthe Wali Gali, Kucha Mahajani, Chandni Chowk]]></item>
+        <item><![CDATA[<b>Where:</b> 2243, Rajguru Marg, Chuna Mandi, Paharganj]]></item>
+        <item><![CDATA[<b>Where:</b> 30, Vasant Place Market, Near Malai Temple, R K Puram, New Delhi]]></item>
+        <item><![CDATA[<b>Where:</b> No.8, Jama Masjid Matia Mahal Road, Matia Mahal]]></item>
+        <item><![CDATA[<b>Where:</b> Jama Masjid, Gali Kababian, Old Delhi]]></item>
+        <item><![CDATA[<b>Where:</b> 29, Defence Colony Market, Defence Colony, New Delhi]]></item>
+        <item><![CDATA[<b>Where:</b> 2298, Gurudwara Road Chowk, Karol Bagh, New Delhi]]></item>
+        <item><![CDATA[<b>Where:</b> 651/52, Church Mission Road, Fatehpuri, Chandni Chowk]]></item>
+        <item><![CDATA[<b>Where:</b> Multiple outlets across the city]]></item>
+    </string-array>
+
+    <string-array name="timing">
+        <item><![CDATA[<b>Timings:</b> 8 am to 10 pm]]></item>
+        <item><![CDATA[<b>Timings:</b> 11:30 am to 9 pm]]></item>
+        <item><![CDATA[<b>Timings:</b> 8 am to 6 pm]]></item>
+        <item><![CDATA[<b>Timings:</b> 12 pm to 4 pm, 7 pm to 11 pm (7 pm to 11 pm on Tuesday)]]></item>
+        <item><![CDATA[<b>Timings:</b> 7 am to 1 am]]></item>
+        <item><![CDATA[<b>Timings:</b> 9 am to 12 am]]></item>
+        <item><![CDATA[<b>Timings:</b> 11 am to 11 pm]]></item>
+        <item><![CDATA[<b>Timings:</b> 4 pm to 11 pm]]></item>
+        <item><![CDATA[<b>Timings:</b> 12 noon to 11 pm]]></item>
+        <item/>
+    </string-array>
 </resources>

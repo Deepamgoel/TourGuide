@@ -1,6 +1,6 @@
 package com.example.deepamgoel.tourguide.model;
 
-public class ItemModel {
+public class ItemDestinationModel {
 
     private String imageUrl;
     private String title;
@@ -8,7 +8,7 @@ public class ItemModel {
     private String descriptionLong;
     private float rating;
 
-    public ItemModel(String imageUrl, String title, String descriptionShort, String descriptionLong, float rating) {
+    public ItemDestinationModel(String imageUrl, String title, String descriptionShort, String descriptionLong, float rating) {
         this.imageUrl = imageUrl;
         this.title = title;
         this.descriptionShort = descriptionShort;

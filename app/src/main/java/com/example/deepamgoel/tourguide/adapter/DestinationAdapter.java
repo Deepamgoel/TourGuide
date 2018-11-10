@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.deepamgoel.tourguide.R;
-import com.example.deepamgoel.tourguide.model.ItemModel;
+import com.example.deepamgoel.tourguide.model.ItemDestinationModel;
 
 import java.util.List;
 
@@ -22,9 +22,9 @@ import butterknife.ButterKnife;
 public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.ViewHolder> {
 
     private Context context;
-    private List<ItemModel> list;
+    private List<ItemDestinationModel> list;
 
-    public DestinationAdapter(Context context, List<ItemModel> list) {
+    public DestinationAdapter(Context context, List<ItemDestinationModel> list) {
         this.context = context;
         this.list = list;
     }
@@ -38,7 +38,7 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder viewHolder, int position) {
-        ItemModel item = list.get(position);
+        ItemDestinationModel item = list.get(position);
 
         Glide.with(context)
                 .load(item.getImageUrl())
