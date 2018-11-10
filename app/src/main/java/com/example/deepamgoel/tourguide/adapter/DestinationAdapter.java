@@ -48,6 +48,10 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
         viewHolder.ratingTextView.setText(String.valueOf(item.getRating()));
         viewHolder.descriptionShortTextView.setText(item.getDescriptionShort());
         viewHolder.descriptionLongTextView.setText(item.getDescriptionLong());
+
+        viewHolder.descriptionLongTextView.setVisibility(View.GONE);
+        viewHolder.moreButton.setText(R.string.more);
+
         viewHolder.moreButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
