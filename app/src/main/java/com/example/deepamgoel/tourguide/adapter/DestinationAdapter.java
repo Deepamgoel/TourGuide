@@ -37,7 +37,7 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
+    public void onBindViewHolder(@NonNull final ViewHolder viewHolder, int position) {
         ItemModel item = list.get(position);
 
         Glide.with(context)
@@ -46,7 +46,25 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
         viewHolder.titleTextView.setText(item.getTitle());
         viewHolder.ratingBar.setRating(item.getRating());
         viewHolder.ratingTextView.setText(String.valueOf(item.getRating()));
-        viewHolder.descriptionTextView.setText(item.getDescription());
+        viewHolder.descriptionShortTextView.setText(item.getDescriptionShort());
+        viewHolder.descriptionLongTextView.setText(item.getDescriptionLong());
+        viewHolder.moreButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (viewHolder.descriptionLongTextView.getVisibility()) {
+                    case View.VISIBLE:
+                        viewHolder.moreButton.setText(R.string.more);
+                        viewHolder.descriptionLongTextView.setVisibility(View.GONE);
+                        break;
+                    case View.GONE:
+                        viewHolder.moreButton.setText(R.string.less);
+                        viewHolder.descriptionLongTextView.setVisibility(View.VISIBLE);
+                        break;
+                    case View.INVISIBLE:
+                        break;
+                }
+            }
+        });
     }
 
     @Override
@@ -64,8 +82,12 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
         RatingBar ratingBar;
         @BindView(R.id.item_rating_text_view)
         TextView ratingTextView;
-        @BindView(R.id.item_description_text_view)
-        TextView descriptionTextView;
+        @BindView(R.id.item_description_short_text_view)
+        TextView descriptionShortTextView;
+        @BindView(R.id.item_more_button)
+        TextView moreButton;
+        @BindView(R.id.item_description_long_text_view)
+        TextView descriptionLongTextView;
 
         ViewHolder(@NonNull View itemView) {
             super(itemView);

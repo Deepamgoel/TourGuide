@@ -7,33 +7,71 @@
     <string name="more">more</string>
     <string name="settings">Settings</string>
     <string name="destination">Destinations</string>
+    <string name="less">less</string>
 
     <string-array name="image_urls">
+        <item>https://bit.ly/2FckDa4</item>
+        <item>https://bit.ly/2PhtM5M</item>
+        <item>https://bit.ly/2z0LXTc</item>
+        <item>https://bit.ly/2JTa5LO</item>
         <item>https://bit.ly/2Ffeb2d</item>
-        <item>https://bit.ly/2Ffeb2d</item>
-        <item>https://bit.ly/2Ffeb2d</item>
-        <item>https://bit.ly/2Ffeb2d</item>
-        <item>https://bit.ly/2Ffeb2d</item>
+        <item>https://bit.ly/2JTqCPY</item>
+        <item>https://bit.ly/2qByug0</item>
+        <item>https://bit.ly/2PiIhq2</item>
+        <item>https://bit.ly/2DvwuhT</item>
+        <item>https://bit.ly/2Ozi9SJ</item>
     </string-array>
+
     <string-array name="title">
+        <item>The Red Fort</item>
+        <item>Qutb Minar</item>
+        <item>India Gate</item>
+        <item>Jama Masjid</item>
         <item>Humayun\'s Tomb</item>
-        <item>Humayun\'s Tomb</item>
-        <item>Humayun\'s Tomb</item>
-        <item>Humayun\'s Tomb</item>
-        <item>Humayun\'s Tomb</item>
+        <item>Lotus Temple</item>
+        <item>Akshardham</item>
+        <item>Rashtrapati Bhavan</item>
+        <item>Jantar Mantar</item>
+        <item>Laxminarayan Temple</item>
     </string-array>
+
     <string-array name="rating">
+        <item>4.4</item>
+        <item>4.5</item>
+        <item>4.6</item>
+        <item>4.4</item>
         <item>4.5</item>
         <item>4.5</item>
-        <item>4.5</item>
-        <item>4.5</item>
+        <item>4.6</item>
+        <item>4.7</item>
+        <item>4.1</item>
         <item>4.5</item>
     </string-array>
-    <string-array name="description">
+
+    <string-array name="descriptionShort">
+        <item>Iconic 1600s imperial residence &amp; museum</item>
+        <item>5-storey victory tower with balconies</item>
+        <item>1920s triumphal arch &amp; war memorial</item>
+        <item>Vast, 17th-century Mughal-style mosque</item>
         <item>Palatial 16th-century tomb of Humayun</item>
-        <item>Palatial 16th-century tomb of Humayun</item>
-        <item>Palatial 16th-century tomb of Humayun</item>
-        <item>Palatial 16th-century tomb of Humayun</item>
-        <item>Palatial 16th-century tomb of Humayun</item>
+        <item>Temple with a flower-like design</item>
+        <item>Modern temple celebrating Indian arts</item>
+        <item>President\'s official home, with museum</item>
+        <item>18th-century astronomy complex</item>
+        <item>Expansive Hindu temple with shrines</item>
     </string-array>
+
+    <string-array name="descriptionLong">
+        <item>Landmark 17th-century Mughal fortress built in towering red sandstone, now a complex of museums.</item>
+        <item>73m tapering tower built in 1193 by Qutab-ud-din Aibak after defeat of Delhi\'s last Hindu kingdom.</item>
+        <item>Imposing Arc de Triomphe-style gate commemorating the Indian soldiers killed in the First World War.</item>
+        <item>17th-century, red sandstone Mughal-style mosque with a 25,000 capacity &amp; 40m high minarets.</item>
+        <item>Opulent red-sandstone tomb of Mughal Emperor Humayun, built in 1572 &amp; surrounded by formal gardens.</item>
+        <item>Religious site also known as the Lotus Temple, opened in 1986 and open to those of all religions.</item>
+        <item>Over 11,000 artisans worked on this lavishly decorated Hindu temple complex inaugurated in 2005.</item>
+        <item>Official residence plus Mughal and herbal gardens of the President of India, with visits by request.</item>
+        <item>13 architectural astronomy instruments built in 1724 at the orders of Mughal emperor Muhammad Shah.</item>
+        <item>This large Hindu temple covers 7.5 acres &amp; features numerous shrines, fountains &amp; a garden.</item>
+    </string-array>
+
 </resources>

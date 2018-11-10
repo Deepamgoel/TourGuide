@@ -71,7 +71,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/item_description_text_view"
+                android:id="@+id/item_description_short_text_view"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp_8"
@@ -80,6 +80,27 @@
                 android:textSize="@dimen/sp_14"
                 tools:text="Iconic 1600s imperial residence &amp; museum" />
 
+            <TextView
+                android:id="@+id/item_more_button"
+                style="@style/Base.TextAppearance.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_16"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/more"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/item_description_long_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_4"
+                android:fontFamily="@font/roboto_thin"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/sp_14"
+                android:visibility="visible"
+                tools:text="Landmark 17th-century Mughal fortress built in towering red sandstone, now a complex of museums." />
         </LinearLayout>
 
     </LinearLayout>

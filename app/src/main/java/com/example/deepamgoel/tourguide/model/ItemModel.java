@@ -4,13 +4,15 @@ public class ItemModel {
 
     private String imageUrl;
     private String title;
-    private String description;
+    private String descriptionShort;
+    private String descriptionLong;
     private float rating;
 
-    public ItemModel(String imageUrl, String title, String description, float rating) {
+    public ItemModel(String imageUrl, String title, String descriptionShort, String descriptionLong, float rating) {
         this.imageUrl = imageUrl;
         this.title = title;
-        this.description = description;
+        this.descriptionShort = descriptionShort;
+        this.descriptionLong = descriptionLong;
         this.rating = rating;
     }
 
@@ -22,8 +24,12 @@ public class ItemModel {
         return title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDescriptionShort() {
+        return descriptionShort;
+    }
+
+    public String getDescriptionLong() {
+        return descriptionLong;
     }
 
     public float getRating() {

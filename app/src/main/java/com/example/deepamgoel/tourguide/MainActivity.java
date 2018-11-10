@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
         Glide.with(this)
                 .asBitmap()
-                .load("https://bit.ly/2Ffeb2d")
+                .load(getResources().getStringArray(R.array.image_urls)[6])
                 .listener(new RequestListener<Bitmap>() {
                     @Override
                     public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Bitmap> target, boolean isFirstResource) {

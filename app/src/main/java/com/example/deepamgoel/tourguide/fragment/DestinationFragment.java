@@ -47,14 +47,16 @@ public class DestinationFragment extends Fragment {
     private void addItem(List<ItemModel> list) {
         String[] urlArray = getResources().getStringArray(R.array.image_urls);
         String[] titleArray = getResources().getStringArray(R.array.title);
-        String[] descriptionArray = getResources().getStringArray(R.array.description);
+        String[] descriptionShortArray = getResources().getStringArray(R.array.descriptionShort);
+        String[] descriptionLongArray = getResources().getStringArray(R.array.descriptionLong);
         String[] ratingArray = getResources().getStringArray(R.array.rating);
         for (int i = 0; i < titleArray.length; i++) {
             list.add(
                     new ItemModel(
                             urlArray[i],
                             titleArray[i],
-                            descriptionArray[i],
+                            descriptionShortArray[i],
+                            descriptionLongArray[i],
                             Float.parseFloat(ratingArray[i])
                     ));
         }
