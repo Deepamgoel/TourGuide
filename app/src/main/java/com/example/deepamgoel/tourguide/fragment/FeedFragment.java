@@ -52,6 +52,7 @@ public class FeedFragment extends Fragment {
         String[] descriptionArray = getResources().getStringArray(R.array.feedDescription);
         String[] authorArray = getResources().getStringArray(R.array.feed_author);
 
+        list.clear();
         for (int i = 0; i < titleArray.length; i++) {
             list.add(
                     new ItemFeedModel(

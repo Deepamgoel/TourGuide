@@ -51,6 +51,7 @@ public class ShopFragment extends Fragment {
         String[] descriptionShortArray = getResources().getStringArray(R.array.shopDescriptionShort);
         String[] descriptionLongArray = getResources().getStringArray(R.array.shopDescriptionLong);
 
+        list.clear();
         for (int i = 0; i < titleArray.length; i++) {
             list.add(
                     new ItemShopModel(

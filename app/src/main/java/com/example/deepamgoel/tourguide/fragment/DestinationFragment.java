@@ -51,6 +51,7 @@ public class DestinationFragment extends Fragment {
         String[] descriptionLongArray = getResources().getStringArray(R.array.destinationDescriptionLong);
         String[] ratingArray = getResources().getStringArray(R.array.rating);
 
+        list.clear();
         for (int i = 0; i < titleArray.length; i++) {
             list.add(
                     new ItemDestinationModel(

@@ -54,6 +54,7 @@ public class MustEatFragment extends Fragment {
         String[] whereArray = getResources().getStringArray(R.array.restaurant_where);
         String[] timingArray = getResources().getStringArray(R.array.restaurant_timing);
 
+        list.clear();
         for (int i = 0; i < titleArray.length; i++) {
             list.add(
                     new ItemEatModel(
