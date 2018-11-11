@@ -1,18 +1,24 @@
 <resources>
     <string name="app_name">Tour Guide</string>
     <string name="new_delhi">New Delhi</string>
-    <string name="capital">Capital of India</string>
 
+    <!--Image description start-->
     <string name="item_image">item_image</string>
-    <string name="settings">Settings</string>
+    <!--Image description end-->
 
-    <!--Tabs-->
-    <string name="destination">Destinations</string>
-    <string name="must_eat">Must Eat</string>
-
+    <!--Button control start-->
     <string name="more">more</string>
     <string name="less">less</string>
+    <!--Button control end-->
 
+    <!--Tabs name start-->
+    <string name="destination">Destinations</string>
+    <string name="must_eat">Must Eat</string>
+    <string name="shop">Shop</string>
+    <string name="feed">Feed</string>
+    <!--Tabs name end-->
+
+    <!--Destination image urls start-->
     <string-array name="destination_image_urls">
         <item>https://bit.ly/2FckDa4</item>
         <item>https://bit.ly/2PhtM5M</item>
@@ -25,7 +31,9 @@
         <item>https://bit.ly/2DvwuhT</item>
         <item>https://bit.ly/2Ozi9SJ</item>
     </string-array>
+    <!--Destination image urls end-->
 
+    <!--Destination titles start-->
     <string-array name="destination_title">
         <item>The Red Fort</item>
         <item>Qutb Minar</item>
@@ -38,7 +46,9 @@
         <item>Jantar Mantar</item>
         <item>Laxminarayan Temple</item>
     </string-array>
+    <!--Destination titles end-->
 
+    <!--Destination ratings start-->
     <string-array name="rating">
         <item>4.4</item>
         <item>4.5</item>
@@ -51,8 +61,10 @@
         <item>4.1</item>
         <item>4.5</item>
     </string-array>
+    <!--Destination ratings end-->
 
-    <string-array name="descriptionShort">
+    <!--Destination short description start-->
+    <string-array name="destinationDescriptionShort">
         <item>Iconic 1600s imperial residence &amp; museum</item>
         <item>5-storey victory tower with balconies</item>
         <item>1920s triumphal arch &amp; war memorial</item>
@@ -64,8 +76,10 @@
         <item>18th-century astronomy complex</item>
         <item>Expansive Hindu temple with shrines</item>
     </string-array>
+    <!--Destination short description end-->
 
-    <string-array name="descriptionLong">
+    <!--Destination long description start-->
+    <string-array name="destinationDescriptionLong">
         <item>Landmark 17th-century Mughal fortress built in towering red sandstone, now a complex of museums.</item>
         <item>73m tapering tower built in 1193 by Qutab-ud-din Aibak after defeat of Delhi\'s last Hindu kingdom.</item>
         <item>Imposing Arc de Triomphe-style gate commemorating the Indian soldiers killed in the First World War.</item>
@@ -77,7 +91,9 @@
         <item>13 architectural astronomy instruments built in 1724 at the orders of Mughal emperor Muhammad Shah.</item>
         <item>This large Hindu temple covers 7.5 acres &amp; features numerous shrines, fountains &amp; a garden.</item>
     </string-array>
+    <!--Destination long description end-->
 
+    <!--Must try food image url start-->
     <string-array name="food_image_urls">
         <item>https://bit.ly/2OBFSlg</item>
         <item>https://bit.ly/2DzncBF</item>
@@ -90,7 +106,9 @@
         <item>https://bit.ly/2QDETms</item>
         <item>https://bit.ly/2AZwX9H</item>
     </string-array>
+    <!--Must try food image url end-->
 
+    <!--Food titles start-->
     <string-array name="food_title">
         <item>Jalebi</item>
         <item>Dahi Bhalla</item>
@@ -103,7 +121,9 @@
         <item>Rabri Falooda</item>
         <item>Raj Kachori</item>
     </string-array>
+    <!--Food titles end-->
 
+    <!--Restaurant name start-->
     <string-array name="restaurant">
         <item>at Old Famous Jalebi Wala</item>
         <item>at Natraj Cafe</item>
@@ -116,7 +136,9 @@
         <item>at Giani\’s Di Hatti</item>
         <item>at Haldirams</item>
     </string-array>
+    <!--Restaurant name end-->
 
+    <!--Food description start-->
     <string-array name="food_description">
         <item>Start off with one of the oldest eateries in Delhi. This 100-year-old shop is known for serving giant, hot and juicy Jalebis.</item>
         <item>A plate of Dahi Bhalla at Natraj is a ritual for people who visit Chandni Chowk regularly.</item>
@@ -129,8 +151,10 @@
         <item>You won\’t be able to finish a plate by yourself.</item>
         <item>If you\'re not drooling already, this will surely make you drool!</item>
     </string-array>
+    <!--Food description end-->
 
-    <string-array name="price">
+    <!--Food price start-->
+    <string-array name="food_price">
         <item><![CDATA[<b>Price:</b> Rs 500 per kg]]></item>
         <item><![CDATA[<b>Price:</b> Rs 50 per plate]]></item>
         <item><![CDATA[<b>Price:</b> Rs 70 per plate]]></item>
@@ -142,8 +166,10 @@
         <item><![CDATA[<b>Price:</b> Rs 80]]></item>
         <item><![CDATA[<b>Price:</b> Rs 100]]></item>
     </string-array>
+    <!--Food price end-->
 
-    <string-array name="where">
+    <!--Restaurant address start-->
+    <string-array name="restaurant_where">
         <item><![CDATA[<b>Where:</b> 795, Dariba Kalan Road, Dariba Corner, Opposite to Central Baptist Church, Chandni chowk]]></item>
         <item><![CDATA[<b>Where:</b> 1396, Main Road Near Central Bank, Opposite, Paranthe Wali Gali, Kucha Mahajani, Chandni Chowk]]></item>
         <item><![CDATA[<b>Where:</b> 2243, Rajguru Marg, Chuna Mandi, Paharganj]]></item>
@@ -155,8 +181,10 @@
         <item><![CDATA[<b>Where:</b> 651/52, Church Mission Road, Fatehpuri, Chandni Chowk]]></item>
         <item><![CDATA[<b>Where:</b> Multiple outlets across the city]]></item>
     </string-array>
+    <!--Restaurant address end-->
 
-    <string-array name="timing">
+    <!--Restaurant timing start-->
+    <string-array name="restaurant_timing">
         <item><![CDATA[<b>Timings:</b> 8 am to 10 pm]]></item>
         <item><![CDATA[<b>Timings:</b> 11:30 am to 9 pm]]></item>
         <item><![CDATA[<b>Timings:</b> 8 am to 6 pm]]></item>
@@ -166,6 +194,64 @@
         <item><![CDATA[<b>Timings:</b> 11 am to 11 pm]]></item>
         <item><![CDATA[<b>Timings:</b> 4 pm to 11 pm]]></item>
         <item><![CDATA[<b>Timings:</b> 12 noon to 11 pm]]></item>
-        <item/>
+        <item />
     </string-array>
+    <!--Restaurant timing end-->
+
+    <!--Market image urls start-->
+    <string-array name="shop_image_urls">
+        <item>https://bit.ly/2zMkFQe</item>
+        <item>https://bit.ly/2DwvQR7</item>
+        <item>https://bit.ly/2PR5Ohg</item>
+        <item>https://bit.ly/2T3vCW8</item>
+        <item>https://bit.ly/2AXNkDr</item>
+        <item>https://bit.ly/2AYZZG8</item>
+        <item>https://bit.ly/2zMlM2m</item>
+        <item>https://bit.ly/2OBKqIk</item>
+        <item>https://bit.ly/2RLChTG</item>
+    </string-array>
+    <!--Market image urls end-->
+
+    <!--Market titles start-->
+    <string-array name="shop_title">
+        <item>Chandni Chowk</item>
+        <item>Paharganj</item>
+        <item>Connaught Place</item>
+        <item>Janpath Market</item>
+        <item>Khan Market</item>
+        <item>Sarojini Nagar Market</item>
+        <item>Dilli Haat</item>
+        <item>Lajpat Nagar Central Market</item>
+        <item>South Extension Market</item>
+    </string-array>
+    <!--Market titles end-->
+
+    <!--Market short description start-->
+    <string-array name="shopDescriptionShort">
+        <item>Flea &amp; Street Markets</item>
+        <item>Neighbourhoods, Flea &amp; Street Markets</item>
+        <item>Points of Interest &amp; Landmarks</item>
+        <item>Gift &amp; Speciality Shops</item>
+        <item>Gift &amp; Speciality Shops</item>
+        <item>Flea &amp; Street Markets</item>
+        <item>Flea &amp; Street Markets</item>
+        <item>Gift &amp; Speciality Shops</item>
+        <item>Flea &amp; Street Markets</item>
+    </string-array>
+    <!--Market short description end-->
+
+    <!--Market long description start-->
+    <string-array name="shopDescriptionLong">
+        <item>This historic market has existed for hundreds of years — since merchants from China and Europe first arrived and began to sell their wares in India. A real treasure trove for shoppers, the market is helpfully divided into bazaars with different areas of specialization: fabrics in Katra Neel, silver in Dariba Kalan, needlework in Kinari Bazaar, and electronics in Bhagirath Palace.</item>
+        <item>While not for the faint-hearted, this market is a must for backpackers, as some of the best bargain shopping in New Delhi can be done here. Paharganj market deals in wholesale and exports to foreign countries, making it the perfect place to browse for inexpensive clothing, shoes, jewelry, books, music, textiles, handicrafts, hookah pipes, incense, and anything else on your souvenir list.</item>
+        <item>The \'Piazza\' of Delhi, Connaught Place is an impressive example of original colonial architecture — and also a massive shopping area! Though some say it\'s gone a little downhill in recent years, the flea market here is still a reliable spot for snatching-up great deals on everything from saris and silver to perfumes and pashmina shawls. Keep your eyes open, as there\'s a bargain to be had on literally every corner!</item>
+        <item>Popular and lively, Janpath Market sells authentic goods from both India and Tibet, making it a favorite for hippie clothing, shoes, leather-work and cheap traditional artifacts.</item>
+        <item>Khan Market offers not only a few great Indian-branded clothing outlets, but also several excellent bookshops and newsstands. You can also get your suit flawlessly tailored within a week, buy Ayurvedic herbs and cosmetics, or relax in one of the many good cafes, restaurants, and lounges situated here.</item>
+        <item>If you are a savvy designer-clothes shopper who\'d relish the chance to browse brand-name accessories and shoes — reduced due to surplus or small manufacturing defects — then Sarojini Nagar Market is the place for you! There\'s also a sweet market (Babu Market) and vegetable market (Subzi Mundi) for when your energy levels need a helping hand.</item>
+        <item>The regular tourist may visit Dilli Haat for its traditional village atmosphere — complete with thatch-roofed cottages — but the \'shopping tourist\' comes for its array of Indian handicrafts and artifacts. Another distinctive feature is that the artists sell their own goods themselves — meaning your money does not go through any middlemen.</item>
+        <item>One of the oldest markets in India, Lajpat Nagar provides an interesting picture of modern Indian shopping culture. Its roadside stalls and showrooms are packed with local Indian shoppers buying clothing, shoes, bags, bangles, and even home furnishings. The market\'s food stalls offer delicious snacks and drinks — as well as good people-watching.</item>
+        <item>Though a little spread-out and chaotic, South Extension Market is the place to be if you are looking for up-market, high-street shopping in Delhi. The market is divided into two parts: South Extension I is the place to head to for brand-name clothing, fashion jewelry, music and sweets, whereas South Extension II has a lounge and several other good-quality restaurants.</item>
+    </string-array>
+    <!--Market long description end-->
+
 </resources>

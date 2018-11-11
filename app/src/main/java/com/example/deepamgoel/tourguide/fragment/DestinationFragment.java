@@ -21,7 +21,7 @@ import butterknife.ButterKnife;
 
 public class DestinationFragment extends Fragment {
 
-    @BindView(R.id.recycler_view_destination_fragment)
+    @BindView(R.id.recycler_view_fragment)
     RecyclerView recyclerView;
     private List<ItemDestinationModel> list = new ArrayList<>();
 
@@ -47,8 +47,8 @@ public class DestinationFragment extends Fragment {
     private void addItem(List<ItemDestinationModel> list) {
         String[] urlArray = getResources().getStringArray(R.array.destination_image_urls);
         String[] titleArray = getResources().getStringArray(R.array.destination_title);
-        String[] descriptionShortArray = getResources().getStringArray(R.array.descriptionShort);
-        String[] descriptionLongArray = getResources().getStringArray(R.array.descriptionLong);
+        String[] descriptionShortArray = getResources().getStringArray(R.array.destinationDescriptionShort);
+        String[] descriptionLongArray = getResources().getStringArray(R.array.destinationDescriptionLong);
         String[] ratingArray = getResources().getStringArray(R.array.rating);
 
         for (int i = 0; i < titleArray.length; i++) {

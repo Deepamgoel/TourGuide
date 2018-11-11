@@ -28,8 +28,8 @@
         <item name="android:layout_marginStart">@dimen/dp_16</item>
         <item name="android:layout_marginLeft">@dimen/dp_16</item>
         <item name="android:layout_marginTop">@dimen/dp_8</item>
-        <item name="android:layout_marginEnd">@dimen/dp_24</item>
-        <item name="android:layout_marginRight">@dimen/dp_24</item>
+        <item name="android:layout_marginEnd">@dimen/dp_16</item>
+        <item name="android:layout_marginRight">@dimen/dp_16</item>
         <item name="android:textSize">@dimen/sp_14</item>
     </style>
 
@@ -42,8 +42,8 @@
         <item name="android:focusable">true</item>
         <item name="android:layout_marginStart">@dimen/dp_16</item>
         <item name="android:layout_marginLeft">@dimen/dp_16</item>
-        <item name="android:layout_marginEnd">@dimen/dp_24</item>
-        <item name="android:layout_marginRight">@dimen/dp_24</item>
+        <item name="android:layout_marginEnd">@dimen/dp_16</item>
+        <item name="android:layout_marginRight">@dimen/dp_16</item>
     </style>
 
     <style name="ItemImageView">

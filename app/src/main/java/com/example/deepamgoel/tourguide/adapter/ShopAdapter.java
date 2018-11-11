@@ -7,24 +7,22 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.deepamgoel.tourguide.R;
-import com.example.deepamgoel.tourguide.model.ItemDestinationModel;
+import com.example.deepamgoel.tourguide.model.ItemShopModel;
 
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.ViewHolder> {
-
+public class ShopAdapter extends RecyclerView.Adapter<ShopAdapter.ViewHolder> {
     private Context context;
-    private List<ItemDestinationModel> list;
+    private List<ItemShopModel> list;
 
-    public DestinationAdapter(Context context, List<ItemDestinationModel> list) {
+    public ShopAdapter(Context context, List<ItemShopModel> list) {
         this.context = context;
         this.list = list;
     }
@@ -32,20 +30,18 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_destination, viewGroup, false);
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item_shop, viewGroup, false);
         return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull final ViewHolder viewHolder, int position) {
-        ItemDestinationModel item = list.get(position);
+        ItemShopModel item = list.get(position);
 
         Glide.with(context)
                 .load(item.getImageUrl())
                 .into(viewHolder.imageView);
         viewHolder.titleTextView.setText(item.getTitle());
-        viewHolder.ratingBar.setRating(item.getRating());
-        viewHolder.ratingTextView.setText(String.valueOf(item.getRating()));
         viewHolder.descriptionShortTextView.setText(item.getDescriptionShort());
         viewHolder.descriptionLongTextView.setText(item.getDescriptionLong());
 
@@ -69,6 +65,7 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
                 }
             }
         });
+
     }
 
     @Override
@@ -78,19 +75,15 @@ public class DestinationAdapter extends RecyclerView.Adapter<DestinationAdapter.
 
     class ViewHolder extends RecyclerView.ViewHolder {
 
-        @BindView(R.id.item_destination_image_view)
+        @BindView(R.id.item_shop_image_view)
         ImageView imageView;
-        @BindView(R.id.item_destination_title_text_view)
+        @BindView(R.id.item_shop_title_text_view)
         TextView titleTextView;
-        @BindView(R.id.item_destination_rating_bar)
-        RatingBar ratingBar;
-        @BindView(R.id.item_destination_rating_text_view)
-        TextView ratingTextView;
-        @BindView(R.id.item_destination_description_short_text_view)
+        @BindView(R.id.item_shop_description_short_text_view)
         TextView descriptionShortTextView;
-        @BindView(R.id.item_destination_more_button)
+        @BindView(R.id.item_shop_more_button)
         TextView moreButton;
-        @BindView(R.id.item_destination_description_long_text_view)
+        @BindView(R.id.item_shop_description_long_text_view)
         TextView descriptionLongTextView;
 
         ViewHolder(@NonNull View itemView) {

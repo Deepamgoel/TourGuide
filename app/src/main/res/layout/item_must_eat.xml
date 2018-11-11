@@ -10,28 +10,22 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_24"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/dp_16"
+        <TextView
+            android:id="@+id/item_eat_title_text_view"
+            style="@style/ItemTextView"
+            android:fontFamily="@font/roboto_condensed_regular"
+            android:textSize="@dimen/sp_24"
+            tools:text="Choley Bhature" />
+
+        <TextView
+            android:id="@+id/item_eat_restaurant_text_view"
+            style="@style/ItemTextView"
+            android:layout_marginTop="0dp"
             android:layout_marginBottom="@dimen/dp_16"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/item_eat_title_text_view"
-                style="@style/ItemTextView"
-                android:fontFamily="@font/roboto_condensed_regular"
-                android:textSize="@dimen/sp_24"
-                tools:text="Choley Bhature" />
-
-            <TextView
-                android:id="@+id/item_eat_restaurant_text_view"
-                style="@style/ItemTextView"
-                tools:text="at Old Famous Jalebi Wala" />
-
-        </LinearLayout>
+            tools:text="at Old Famous Jalebi Wala" />
 
         <ImageView
             android:id="@+id/item_eat_image_view"
@@ -39,34 +33,28 @@
             android:contentDescription="@string/item_image"
             tools:src="@drawable/wallpaper" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+        <TextView
+            android:id="@+id/item_eat_description_text_view"
+            style="@style/ItemTextView"
             android:layout_marginTop="@dimen/dp_16"
-            android:layout_marginBottom="@dimen/dp_24"
-            android:orientation="vertical">
+            android:ellipsize="end"
+            android:maxLines="3"
+            tools:text="If Choley Bhature and lassi is food anaesthesia, then this place will induce food coma!" />
 
-            <TextView
-                android:id="@+id/item_eat_description_text_view"
-                style="@style/ItemTextView"
-                tools:text="If Choley Bhature and lassi is food anaesthesia, then this place will induce food coma!" />
+        <TextView
+            android:id="@+id/item_eat_price_text_view"
+            style="@style/ItemTextView"
+            tools:text="Price: Rs 500 per kg" />
 
-            <TextView
-                android:id="@+id/item_eat_price_text_view"
-                style="@style/ItemTextView"
-                tools:text="Price: Rs 500 per kg" />
+        <TextView
+            android:id="@+id/item_eat_where_text_view"
+            style="@style/ItemTextView"
+            tools:text="Where: 795, Dariba Kalan Road, Dariba Corner, Opposite to Central Baptist Church, Chandni chowk" />
 
-            <TextView
-                android:id="@+id/item_eat_where_text_view"
-                style="@style/ItemTextView"
-                tools:text="Where: 795, Dariba Kalan Road, Dariba Corner, Opposite to Central Baptist Church, Chandni chowk" />
-
-            <TextView
-                android:id="@+id/item_eat_timing_text_view"
-                style="@style/ItemTextView"
-                tools:text="Timings: 8 am to 10 pm" />
-
-        </LinearLayout>
+        <TextView
+            android:id="@+id/item_eat_timing_text_view"
+            style="@style/ItemTextView"
+            tools:text="Timings: 8 am to 10 pm" />
 
     </LinearLayout>
 

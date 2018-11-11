@@ -21,7 +21,9 @@ import com.bumptech.glide.request.RequestListener;
 import com.bumptech.glide.request.target.Target;
 import com.example.deepamgoel.tourguide.adapter.ViewPagerAdapter;
 import com.example.deepamgoel.tourguide.fragment.DestinationFragment;
+import com.example.deepamgoel.tourguide.fragment.FeedFragment;
 import com.example.deepamgoel.tourguide.fragment.MustEatFragment;
+import com.example.deepamgoel.tourguide.fragment.ShopFragment;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -114,6 +116,8 @@ public class MainActivity extends AppCompatActivity {
         ViewPagerAdapter pagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
         pagerAdapter.addFragment(new DestinationFragment(), getString(R.string.destination));
         pagerAdapter.addFragment(new MustEatFragment(), getString(R.string.must_eat));
+        pagerAdapter.addFragment(new ShopFragment(), getString(R.string.shop));
+        pagerAdapter.addFragment(new FeedFragment(), getString(R.string.feed));
         viewPager.setAdapter(pagerAdapter);
     }
 
