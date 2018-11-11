@@ -254,4 +254,60 @@
     </string-array>
     <!--Market long description end-->
 
+
+    <!--Feed link urls start-->
+    <string-array name="feed_link_urls">
+        <item>https://bit.ly/2JSxlJL</item>
+        <item>https://bit.ly/2qGG74S</item>
+        <item>https://bit.ly/2qGGw7o</item>
+        <item>https://bit.ly/2z3omBn</item>
+        <item>https://bit.ly/2T2uDWf</item>
+        <item>https://bit.ly/2DxyXbw</item>
+    </string-array>
+    <!--Feed link urls end-->
+
+    <!--Feed image urls start-->
+    <string-array name="feed_image_urls">
+        <item>https://bit.ly/2Qzjdrk</item>
+        <item>https://bit.ly/2JUQyKJ</item>
+        <item>https://bit.ly/2QtPVdI</item>
+        <item>https://bit.ly/2AWLWAX</item>
+        <item>https://bit.ly/2QvfMlz</item>
+        <item>https://bit.ly/2AY6Y2l</item>
+    </string-array>
+    <!--Feed image urls end-->
+
+    <!--Feed titles start-->
+    <string-array name="feed_title">
+        <item>8 Popular Dargahs To Check Out In Delhi For A Slice Of Serenity</item>
+        <item>This Chole Kulche Joint In Karol Bagh Is A Lesser-Known Gem Everybody Needs To Head To</item>
+        <item>6 Stalls Whipping Up Green Burgers &amp; Colourful Momos At The Popup District @ Horn OK Please</item>
+        <item>This New PUB Ji Cafe (Wow) In Punjabi Bagh Offers Charcoal Butter Chicken &amp; More!</item>
+        <item>8 Quirky &amp; Yummy Butter Chicken Dishes That Are A Must-Try For All The Meat Lovers In Delhi</item>
+        <item>This Super Dreamy Place In Delhi Will Make You Feel You\'re A Million Miles Away</item>
+    </string-array>
+    <!--Feed titles end-->
+
+    <!--Feed authors start-->
+    <string-array name="feed_author">
+        <item>Delhi Dweller</item>
+        <item>Nukkad Ka Bhukkad</item>
+        <item>City Wire</item>
+        <item>Dilli Glutton</item>
+        <item>Dilli Glutton</item>
+        <item>Delhi Dweller</item>
+    </string-array>
+    <!--Feed authors end-->
+
+    <!--Feed description start-->
+    <string-array name="feedDescription">
+        <item>Check out this list of the most popular and beautiful shrines that you should defo check out in Delhi!</item>
+        <item>Head to Karol Bagh and get yourself a tangy and spicy plate of Chole Kulche from this under-discovered foodie gem!</item>
+        <item>Delhi\’s Happiest Food Festival is back with its 4th edition and to make the most of it, check out these amazing stalls at the Popup District while you\’re there!</item>
+        <item>We\’ve found this awesomesauce cafe that recently opened its doors in Delhi\’s famous Punjabi Bagh - keep reading!</item>
+        <item>Take your love for butter chicken to a whole new level with these 8 innovative and quirky butter chicken dishes in the city!</item>
+        <item>This green sweet haven serves as a getaway for all those who are simply sick and tired of the hustle and bustle of the city life!</item>
+    </string-array>
+    <!--Feed description end-->
+
 </resources>

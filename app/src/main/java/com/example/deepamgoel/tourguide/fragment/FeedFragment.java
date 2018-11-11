@@ -46,22 +46,22 @@ public class FeedFragment extends Fragment {
     }
 
     private void addItem(List<ItemFeedModel> list) {
-//        String[] urlArray = getResources().getStringArray(R.array.destination_image_urls);
-//        String[] titleArray = getResources().getStringArray(R.array.destination_title);
-//        String[] descriptionShortArray = getResources().getStringArray(R.array.descriptionShort);
-//        String[] descriptionLongArray = getResources().getStringArray(R.array.descriptionLong);
-//        String[] ratingArray = getResources().getStringArray(R.array.rating);
+        String[] feedUrlArray = getResources().getStringArray(R.array.feed_link_urls);
+        String[] imageUrlArray = getResources().getStringArray(R.array.feed_image_urls);
+        String[] titleArray = getResources().getStringArray(R.array.feed_title);
+        String[] descriptionArray = getResources().getStringArray(R.array.feedDescription);
+        String[] authorArray = getResources().getStringArray(R.array.feed_author);
 
-//        for (int i = 0; i < titleArray.length; i++) {
-//            list.add(
-//                    new ItemDestinationModel(
-//                            urlArray[i],
-//                            titleArray[i],
-//                            descriptionShortArray[i],
-//                            descriptionLongArray[i],
-//                            Float.parseFloat(ratingArray[i])
-//                    ));
-//        }
+        for (int i = 0; i < titleArray.length; i++) {
+            list.add(
+                    new ItemFeedModel(
+                            feedUrlArray[i],
+                            imageUrlArray[i],
+                            titleArray[i],
+                            descriptionArray[i],
+                            authorArray[i]
+                    ));
+        }
     }
 
 }

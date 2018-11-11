@@ -33,6 +33,12 @@
         <item name="android:textSize">@dimen/sp_14</item>
     </style>
 
+    <style name="ItemTextViewSmall" parent="ItemTextView">
+        <item name="android:layout_marginStart">@dimen/dp_8</item>
+        <item name="android:layout_marginLeft">@dimen/dp_8</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
     <style name="ItemButtonTextView" parent="Base.TextAppearance.AppCompat.Button">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
